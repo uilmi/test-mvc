@@ -1,0 +1,29 @@
+<html>
+
+<head>
+    <Title>
+        Article | All
+    </Title>
+</head>
+
+<body>
+    <% articles.forEach((i)=> { %>
+        <div>
+            <h1>
+                <%= i.title %>
+            </h1>
+
+            <p>
+                <%= i.body %>
+            </p>
+
+            <a href="/articles/<%= i.id %>">
+                Baca lebih lanjut
+            </a>
+
+            <br>
+        </div>
+        <% }) %>
+</body>
+
+</html>
